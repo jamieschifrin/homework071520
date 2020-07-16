@@ -6,16 +6,22 @@ var tests = [[1,2,3],[4,5,6]];
 var arr = [
     [1,2], [3,4], [5,6]
   ];
-  for (var i=0; i < arr.length; i++) {
-    for (var j=0; j < arr[i].length; j++) {
-      console.log(arr[i][j]);
+  
+  function logTwoD(firstArgument){
+    for(var i=0; i < firstArgument.length; i++){
+      // console.log(firstArgument[i])
+      for(var j=0; j < firstArgument[i].length; j++){
+      console.log(firstArgument[i][j])
+}
     }
-  };
+  }
+  
+  
 
 
 // 5
 
-// [ [ [1,2] , [3 , 4 ] , [ [5 , 6] , [ 7 ,8] ] , [ 9,10 ] ]
+var testOne=[ [ [1,2] , [3 , 4 ] , [ [5 , 6] , [ 7 ,8] ] , [ 9,10 ] ];
 // 6
 
 function myFunction(firstNumber,secondNumber){
